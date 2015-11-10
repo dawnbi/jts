@@ -6,6 +6,8 @@
     </tstamp>
 
 	<property name="jmeter.home" value="D:\software\apache-jmeter-2.8" />
+	<property name="request.threads" value="3"/>
+    <property name="request.loop" value="10"/>
 
 	<property name="jmeter.result.jtl.dir" value="D:\software\apache-jmeter-2.8\jmeterwork\resultLog\jtl" />
 
