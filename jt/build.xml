@@ -21,6 +21,8 @@
 	</target>
 	
 	<target name="test">
+	    <delete dir="${jmeter.result.html.dir}"/>
+        <mkdir dir="${jmeter.result.html.dir}"/>
 		<taskdef name="jmeter" classname="org.programmerplanet.ant.taskdefs.jmeter.JMeterTask" /> 
 		<jmeter jmeterhome="${jmeter.home}" resultlog="${jmeter.result.jtlName}">
 		<testplans dir="D:\software\apache-jmeter-2.8\jmeterwork" includes="*.jmx" />
